@@ -6,6 +6,10 @@ apply plugin: 'java'
 
 sourceCompatibility = 1.8
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.0'
+}
+
 repositories {
     jcenter()
     mavenCentral()
