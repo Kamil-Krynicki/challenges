@@ -3,4 +3,4 @@ language:
 jdk:
   - oraclejdk8
 script:
-  gradle check assemble
+  gradlew  check assemble
