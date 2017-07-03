@@ -19,7 +19,7 @@ dependencies {
     // https://mvnrepository.com/artifact/org.openjdk.jmh/jmh-core
     compile group: 'org.openjdk.jmh', name: 'jmh-core', version: '1.19'
     // https://mvnrepository.com/artifact/org.openjdk.jmh/jmh-generator-annprocess
-    compileOnly  group: 'org.openjdk.jmh', name: 'jmh-generator-annprocess', version: '1.19'
+    provided  group: 'org.openjdk.jmh', name: 'jmh-generator-annprocess', version: '1.19'
 
     // https://mvnrepository.com/artifact/org.testng/testng
     testCompile group: 'org.testng', name: 'testng', version: '6.11'
