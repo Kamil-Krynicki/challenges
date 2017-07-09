@@ -2,5 +2,5 @@ language:
   java
 jdk:
   - oraclejdk8
-before_install:
-   gradle wrapper --gradle-version 4.0
+script:
+./gradlew build
