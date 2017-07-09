@@ -3,6 +3,6 @@ language:
 jdk:
   - oraclejdk8
 before_install:
-   gradle -b wrapper.gradle wrapper
+   gradle -b build.gradle wrapper
 script:
   gradlew clean check assemble
