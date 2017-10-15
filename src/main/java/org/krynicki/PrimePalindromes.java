@@ -7,6 +7,7 @@ import org.openjdk.jmh.annotations.OutputTimeUnit;
 import org.openjdk.jmh.annotations.Threads;
 
 import java.util.concurrent.TimeUnit;
+import java.util.function.IntSupplier;
 import java.util.stream.Stream;
 
 /**
@@ -83,6 +84,18 @@ public class PrimePalindromes {
 
         return result;
     }
+
+    public static void main(String... args) {
+        kamil("value"::length);
+        kamil("not a test with spaces"::length);
+        kamil(() -> "test with a space".split(" ")[0].length());
+        System.out.println();
+    }
+
+    private static void kamil(IntSupplier intSource) {
+        System.out.println(intSource.getAsInt());
+    }
+
 
     @Benchmark()
     @BenchmarkMode(value = Mode.AverageTime)
